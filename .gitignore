@@ -1,0 +1,13 @@
+# Root
+.DS_Store
+*.log
+
+# Server
+server/.env
+server/node_modules/
+server/dist/
+
+# Client
+client/.env
+client/node_modules/
+client/dist/
