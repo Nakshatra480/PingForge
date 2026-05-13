@@ -32,7 +32,7 @@ app.use(errorHandler);
 const start = async () => {
   try {
     await connectDatabase();
-    app.listen(env.PORT, () => {
+    app.listen(env.PORT, '0.0.0.0', () => {
       console.log(`Server running on port ${env.PORT} in ${env.NODE_ENV} mode`);
     });
   } catch (err) {
